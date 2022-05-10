@@ -7,6 +7,7 @@
             Console.WriteLine("Enter a  number for a particular problem.\n");
             Console.WriteLine("1 for Flip coin and finding percentage of heads and tails");
             Console.WriteLine("2 for checking Leap year or not");
+            Console.WriteLine("3 for finding power of 2");
 
             int Problem = Convert.ToInt32(Console.ReadLine());
             Program basicprogram = new Program();
@@ -19,7 +20,11 @@
                 case 2:
                     leapyear leap = new leapyear();
                     leap.LeapYear();
-                    break; 
+                    break;
+                case 3:
+                    Powerof2 pow2 = new Powerof2();
+                    pow2.PowerOfTwo();
+                    break;
             }
         }
     }
