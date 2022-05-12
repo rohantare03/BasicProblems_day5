@@ -9,6 +9,7 @@
             Console.WriteLine("2 for checking Leap year or not");
             Console.WriteLine("3 for finding power of 2");
             Console.WriteLine("4 for Harmonic number");
+            Console.WriteLine("5 for prime factors");
            
 
             int Problem = Convert.ToInt32(Console.ReadLine());
@@ -30,6 +31,10 @@
                 case 4:
                     Harmonic harmonicnum = new Harmonic();
                     harmonicnum.HarmonicNumber();
+                    break;
+                case 5:
+                    PrimeFact primefact = new PrimeFact();
+                    primefact.Prime();
                     break;
             }
         }
