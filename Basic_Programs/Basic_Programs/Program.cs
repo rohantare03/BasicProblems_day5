@@ -11,6 +11,7 @@
             Console.WriteLine("4 for Harmonic number");
             Console.WriteLine("5 for prime factors");
             Console.WriteLine("6 for finding Quotient and Remainder");
+            Console.WriteLine("7 for swapping two numbers");
            
 
             int Problem = Convert.ToInt32(Console.ReadLine());
@@ -41,6 +42,10 @@
                     QuotientRemainder quotientremainder = new QuotientRemainder();
                     quotientremainder.Quotient_Remainder();
                     break;
+                case 7:
+                    SwapTwoNum swap = new SwapTwoNum();
+                    swap.SwapNum();
+                    break; 
             }
         }
     }
