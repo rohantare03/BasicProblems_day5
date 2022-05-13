@@ -4,7 +4,7 @@
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Enter a  number for a particular problem.\n");
+            Console.WriteLine("Enter a  number for a particular problem.");
             Console.WriteLine("1 for Flip coin and finding percentage of heads and tails");
             Console.WriteLine("2 for checking Leap year or not");
             Console.WriteLine("3 for finding power of 2");
@@ -14,10 +14,10 @@
             Console.WriteLine("7 for swapping two numbers");
             Console.WriteLine("8 for Checking Even or Odd");
             Console.WriteLine("9 for Checking Vowel or Consonant");
+            Console.WriteLine("10 for finding the largest number");
            
 
             int Problem = Convert.ToInt32(Console.ReadLine());
-            Program basicprogram = new Program();
             switch (Problem)
             {
                 case 1:
@@ -55,6 +55,13 @@
                 case 9:
                     VowelConsonant vowelConsonant = new VowelConsonant();
                     vowelConsonant.Vowel_Consonant();
+                    break;
+                case 10:
+                    LargestNumber largestnumber = new LargestNumber();
+                    largestnumber.LargestNum();
+                    break;
+                default:
+                    Console.WriteLine("Enter a valid number");
                     break;
          
             }
