@@ -13,6 +13,7 @@
             Console.WriteLine("6 for finding Quotient and Remainder");
             Console.WriteLine("7 for swapping two numbers");
             Console.WriteLine("8 for Checking Even or Odd");
+            Console.WriteLine("9 for Checking Vowel or Consonant");
            
 
             int Problem = Convert.ToInt32(Console.ReadLine());
@@ -50,6 +51,10 @@
                 case 8:
                     EvenOdd evenOdd = new EvenOdd();
                     evenOdd.EvenOrOdd();
+                    break;
+                case 9:
+                    VowelConsonant vowelConsonant = new VowelConsonant();
+                    vowelConsonant.Vowel_Consonant();
                     break;
          
             }
